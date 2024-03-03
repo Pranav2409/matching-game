@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Screen2 from './Screen2';
+import ActScreen from './ActScreen'; // Import the ActivityScreen component
+import FinalScreen from './FinalScreen';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Screen2" element={<Screen2 />} />
+        <Route path="/ActScreen" element={<ActScreen />} /> {/* Route to ActivityScreen*/}
+        <Route path ="/FinalScreen" element={<FinalScreen/>} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

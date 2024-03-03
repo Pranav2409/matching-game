@@ -1,0 +1,49 @@
+.background{
+    background-image: url('./images/bg.png');
+    width: 98vw;
+    height: 95vh; 
+    object-fit: cover; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .pink-card-container,
+  .blue-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px; /* Gap between cards */
+  }
+  
+  .card {
+    width: 100px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: yellow;
+  }
+  .btn-next{
+    padding-top: 8%;
+    margin-right: 0.5%; /* Adjust margin for padding */
+    width: 12%;
+    height: 10%;
+    position: absolute;
+    bottom: 0.5px;
+    right: 20px;
+    cursor: pointer;
+  }
+  

@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+.start-container{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+.welcome-text{
+  margin-bottom: 10px;
+}
+.main-img {
+  width: 60%;
+  height: auto;
+}
+.image-container{
+  position: relative;
+  display: inline-block;
+}
+.btn1 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 30px; /* Adjust as needed */
+  right: 50px; /* Adjust as needed */
+}
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+.btn-start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-back{
+  width: 200px;
+  height: 200px;
+  top: 10px;
+  left: 30%;
+}
+
+
